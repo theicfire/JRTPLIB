@@ -77,6 +77,7 @@ else (LIBSRTP_FOUND)
 endif (LIBSRTP_FOUND)
 
 option(SRTP_ENABLED "Secure RTP (SRTP) support" ${V})
+set(SRTP_ENABLED "ON")
 if (SRTP_ENABLED)
 	set(RTP_SUPPORT_SRTP "#define RTP_SUPPORT_SRTP")
 	if (LIBSRTP_FOUND)
